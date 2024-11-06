@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+*{
+  font-family: Sanchez, "slab-serif";
+
+}
+html{
+  color: rgb(0, 74, 143);
+  background-color: white;
+}
+
+h1{
+  font-size: 3em;
+}
+
+body,  p{
+  font-size: 1em;
+} 
+
+ul{
+    font-size: 2em;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item img {
+    max-height: 120px;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+ul a:hover{
+    background-color:rgb(0, 74, 143);
+    color: white;
+}
+
+
+/*Contact form*/
+  .form-group {
+    margin-bottom: 1em;
+  }
+  .form-input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .btn {
+    background-color: #cdcdcd;
+    color: white;
+    padding: 0.7em 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #454545;
+  }
+  .success {
+    color: green;
+  }
+  .error {
+    color: red;
+  }
+  .contact-info p {
+    margin: 0.5em 0;
+  }
+
+@media (min-width: 700px) {
+    #submission-fields {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 25px 0;
+    }
+    fieldset {
+        min-width: 45%;
+    }
+}
